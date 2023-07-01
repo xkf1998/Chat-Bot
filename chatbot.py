@@ -14,7 +14,7 @@ prompts = [
     "Let me dazzle you with intriguing facts about",
     "Hold on tight, because I'm about to reveal something extraordinary about",
 ]
-
+# search result on internet first
 def search_topic(topic):
     query = topic + " information"
     search_results = search(query, num_results=5, lang='en', stop=5)
@@ -32,6 +32,7 @@ def search_topic(topic):
 
         print("\n=======================================\n")
 
+# use openai interface for interaction
 def chat_with_bot():
     print("Welcome! I am your companion, here to entertain and enlighten you.")
     print("Ask me anything or tell me a topic, and I'll provide interesting information with a touch of humor.")
